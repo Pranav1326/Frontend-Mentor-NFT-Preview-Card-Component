@@ -24,7 +24,7 @@ body{
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    min-height: 100vh;
+    min-height: calc(100vh - 2rem);
 }
 
 .card{
@@ -173,12 +173,13 @@ hr{
 
 .attribution { 
     font-size: 11px; 
-    text-align: center; 
-    bottom: 0.5rem;
-    position: absolute;
+    display: flex;
+    align-items: center;
+    justify-content: center;
     width: calc(100% - 10px );
+    height: 2rem;
     color: hsl(0, 0%, 100%);
-    font-weight: 300;
+    gap: 0.3rem;
 }
 
 .attribution a { 
